@@ -1,0 +1,105 @@
+<html>
+<head>
+
+<style>
+body{
+margin:0;
+padding:0;
+border:2px solid#555;
+}
+.center{
+width:500px;
+border:0;
+border:2px solid#555;
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+<?php
+include() ( config.php');
+if(isset ('$-post['btn'])){
+$name=$_('$_post'['name'];
+$email=$_('$_post'['email'];
+$password=$_('$_post'['password'];
+$Gender=$_('$_post'['Gender'];
+$country=$_('$_post'['country'];
+$Contact=$_('$_post'['contact'];
+$dob('$_post'['DoB'];
+if(empty($name)// (empty($emaile )
+empty($password)//
+(empty($gender)//
+(empty($country)//
+(empty($dob)//
+{
+}
+err="fill   the required filelds";
+}
+
+?>         
+<center>
+
+<form action="method" name ="post">
+<table>
+<tr>
+<td> <h1>contact me </h1>
+</td>
+<td><p class="err">
+<?php
+if(isset ($err){echo $err;}
+</td>
+
+</tr>
+<tr>
+<td>name </td>
+<td><input type="text" name="name"/></td>
+</tr>
+<tr>
+<td>email </td>  
+<td><input type="email" name="email"/></td>
+</tr>
+<tr>
+<td>password </td>
+<td><input type="password" name="password"/></td>
+</tr>
+<tr>
+<td>Gender </td>
+
+<td><input type="radio" name= "gender" value="male">male</td>
+<td><input type="radio" name="gender" value="femail">femail</td>
+
+</tr>
+<tr>
+<td>country </td>
+<td><select name ="country ">
+<option>Egypt</option>
+<option>turkesh </option>
+
+</select>
+</td>
+</tr>
+<tr>
+<td>contact </td>
+<td><input type="text" name="contact"/></td>
+</tr>
+
+<tr>
+<td>date </td>
+<td> <input type="text" name="Date"/></td>
+</tr>
+
+<tr>
+<td>Submit </td>
+<td> <input type="submit" name="submit"/></td>
+</tr>
+
+
+</table>
+</form>
+
+</body>
